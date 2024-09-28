@@ -14,7 +14,7 @@ I'm creating a directory called `.secret` here in the same directory.
 Please note that the container will write `hostname`, `hs_ed25519_public_key` and `hs_ed25519_secret_key` to this folder when it runs for the first time. Please ensure that this is securely stored.
 On subsequent runs, the image will read from this location and restart the onion service on the same hostname.
 
-If you get a custom hostname ([Vanity Address](https://community.torproject.org/onion-services/advanced/vanity-addresses/) created for your service, you can place the corresponding `private_key` files in the `.secret` location and the service should start at that address. 
+If you get a custom hostname ([Vanity Address](https://community.torproject.org/onion-services/advanced/vanity-addresses/)) created for your service, you can place the corresponding `private_key` files in the `.secret` location and the service should start at that address. 
 
 ```
 ♪ mkdir .service
